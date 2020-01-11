@@ -9,11 +9,11 @@ import java.time.Duration;
 /**
  * Created by nando on 03/03/17.
  */
-@Entity
+@Entity // corresponde a tabela de mesmo nome no BDD
 public class Filme {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id // PK no BDD
+    @GeneratedValue(strategy = GenerationType.IDENTITY) // info ao provedor de persistencia que os ID serão gerados pelo auto incrmento do BDD
     private Integer id;
     private String nome;
     private Duration duracao;

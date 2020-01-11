@@ -10,11 +10,11 @@ import java.util.List;
 /**
  * Created by nando on 03/03/17.
  */
-@Repository
+@Repository // define que a classe como pertencente a camada de persistencia
 public class FilmeDao {
 
-    @PersistenceContext
-    private EntityManager manager;
+    @PersistenceContext // local onde ficam armazenados os objetos/entidades que estão sendo manipulados pelo entity manager
+    private EntityManager manager; // responsavel pelo CRUD no BDD
 
 
     public Filme findOne(Integer id) {
