@@ -1,5 +1,4 @@
 package br.com.caelum.ingresso.dao;
-
 import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
